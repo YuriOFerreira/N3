@@ -11,6 +11,10 @@ Com o código baixado vá até a pasta do arquivo pelo Terminal ou CMD de sua ma
 npm start
 ```
 
+Recomendo para testes o Postman segue link para download:
+https://www.postman.com/downloads/
+
+
 ## Persistencia de Dados
 
 Os dados são salvos no banco de dados MongoDB.
