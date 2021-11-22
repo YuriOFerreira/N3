@@ -16,6 +16,11 @@ module.exports = (app) => {
     }
   });
 
+  app.get("/sala/:id", async (req, res) => {
+    const sala = await Sala.findOne({ _id: req.params.id });
+    res.send(sala);
+  });
+
   app.put("/sala/:id", async (req, res) => {
     try {
       const { nome, lotacao } = req.body;

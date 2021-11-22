@@ -27,7 +27,7 @@ module.exports = (app) => {
     }
   });
 
-  app.delete("/salaevent/:id", async (req, res) => {
+  app.delete("/sala/:id", async (req, res) => {
     try {
       await Pessoa.deleteOne({ _id: req.params.id });
       res.send(this.props);
